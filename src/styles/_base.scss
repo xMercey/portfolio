@@ -1,0 +1,75 @@
+:root {
+  /* Primary */
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+
+  /* Text */
+  --text: #0f172a;
+  --text-light: #64748b;
+
+  /* Borders */
+  --border: #e2e8f0;
+
+  /* Backgrounds */
+  --background: #f9fafb;
+  --card: #ffffff;
+
+  /* Subtle UI Colors */
+  --surface: #f1f5f9;
+  --hover: #eef2ff;
+
+  /* Layout */
+  --header-h: 64px;
+  --footer-h: 72px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text', Arial,
+    sans-serif;
+  background: linear-gradient(to bottom, #f8fafc, #eef2ff);
+  color: var(--text);
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  padding-top: var(--header-h);
+  padding-bottom: var(--footer-h);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+
+  h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: var(--text-light);
+  }
+}
+
