@@ -32,7 +32,7 @@ export function LandingPage() {
         </div>
 
         <div className="hero-right">
-          <img src="/me.jpeg" alt="Lara Helmli" className="hero-image" />
+          <img src="/ich.jpg" alt="Lara Helmli" className="hero-image" />
         </div>
 
       </section>

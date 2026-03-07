@@ -4,36 +4,30 @@
   --primary-hover: #4f46e5;
 
   /* Text */
-  --text: #0f172a;
-  --text-light: #64748b;
+  --text: #f9fafb;          // heller Text für Dark Mode
+  --text-light: #cbd5e1;    // helleres Grau
+  --text-dark: #0f172a;     // für Hellmodus
 
   /* Borders */
-  --border: #e2e8f0;
+  --border: #334155;
 
   /* Backgrounds */
-  --background: #f9fafb;
-  --card: #ffffff;
+  --background: #000000;     // dunkel
+  --card: #1e293b;           // dunkle Kartenfarbe
 
   /* Subtle UI Colors */
-  --surface: #f1f5f9;
-  --hover: #eef2ff;
+  --surface: #1e293b;
+  --hover: #334155;
 
   /* Layout */
   --header-h: 64px;
   --footer-h: 72px;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text', Arial,
-    sans-serif;
-  background: linear-gradient(to bottom, #f8fafc, #eef2ff);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text', Arial, sans-serif;
+  background: var(--background);
   color: var(--text);
 }
 
