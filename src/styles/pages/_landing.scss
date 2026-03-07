@@ -37,23 +37,11 @@
   }
 
   &-image {
-    max-width: 520px;         // maximale Breite            // passt sich Container an
-    height: 100%;            // feste Höhe für Zuschneiden
-    overflow: hidden;         // alles außerhalb abschneiden
-    position: relative;
-    border-radius: 1rem;
+    width:100% !important;
+    height: 350px;           // feste Höhe für Zuschneiden
+    object-fit: cover;      
+    object-position: center; // Fokus auf obere Mitte
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;     // füllt Container, schneidet ggf. zu
-      object-position: center; // Bild zentriert
-      display: block;
-    }
-
-    box-shadow:
-      0 20px 40px rgba(0,0,0,0.08),
-      0 0 0 1px rgba(0,0,0,0.04);
   }
 }
 
