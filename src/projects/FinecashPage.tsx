@@ -1,10 +1,9 @@
 import { useState } from "react";
 
-
 const screenshots = [
-  "/me.jpeg",
-  "/assets/finecash/2.jpg",
-  "/assets/finecash/3.jpg",
+  "https://picsum.photos/300/600",
+  "https://picsum.photos/301/600",
+  "https://picsum.photos/302/600",
 ];
 
 export function FinecashPage() {
@@ -16,43 +15,89 @@ export function FinecashPage() {
 
   return (
     <div className="page finecash-page">
+      {/* Header */}
+      <section className="section project-header">
+        <h1>Finecash</h1>
 
-      <section className="section header-links">
-        <h1>Finecash Website</h1>
+        <p className="description">
+          Finecash ist eine Plattform zur Verwaltung und Analyse von Finanzdaten.
+          Die Anwendung bietet eine moderne Weboberfläche zur Darstellung und
+          Verwaltung von Finanzinformationen.
+        </p>
+
         <div className="links">
-          <a href="https://www.finecash.de" target="_blank" rel="noreferrer" className="btn btn-primary">
-            Website besuchen
+          <a
+            href="https://www.finecash.de"
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-primary"
+          >
+            Website
           </a>
-          <a href="https://gitlab.bht-berlin.de/finecash" target="_blank" rel="noreferrer" className="btn btn-secondary">
+
+          <a
+            href="https://gitlab.bht-berlin.de/finecash"
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-secondary"
+          >
             GitLab Repo
+          </a>
+
+          <a
+            href="https://gitlab.bht-berlin.de/finecash/app"
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-secondary"
+          >
+            App Code
           </a>
         </div>
       </section>
 
+      {/* Content */}
       <section className="section finecash-content">
-        {/* Linke Spalte */}
-        <div className="text-left">
-          <h2>Was ich gemacht habe</h2>
-          <div className="tasks">
-            <div className="task-box">Design & Implementierung der Landingpage</div>
-            <div className="task-box">Setup mit React, TypeScript und Vite</div>
-            <div className="task-box">Performance Optimierung & SEO</div>
-          </div>
+        {/* TEXT LINKS */}
+        <div className="tasks-summary">
+          <h2>Meine Aufgaben</h2>
+
+          <p>
+            <strong>Landingpage Design</strong> mit Fokus auf moderne UX und
+            responsive Layouts.
+          </p>
+
+          <p>
+            <strong>Technisches Setup</strong> mit React, TypeScript und Vite.
+          </p>
+
+          <p>
+            <strong>Performance & SEO</strong> Optimierungen.
+          </p>
         </div>
 
-        {/* Rechte Spalte: Handy-Slider */}
+        {/* SLIDER RECHTS */}
         <div className="slider-right">
           <div className="phone-frame">
             <img src={screenshots[current]} alt={`Screenshot ${current + 1}`} />
           </div>
+
           <div className="slider-controls">
-            <button onClick={prev}>←</button>
-            <span>{current + 1} / {screenshots.length}</span>
-            <button onClick={next}>→</button>
+            <button onClick={prev}>‹</button>
+
+            <div className="dots">
+              {screenshots.map((_, index) => (
+                <span
+                  key={index}
+                  className={`dot ${current === index ? "active" : ""}`}
+                  onClick={() => setCurrent(index)}
+                />
+              ))}
+            </div>
+
+            <button onClick={next}>›</button>
           </div>
         </div>
       </section>
-
     </div>
   );
 }
