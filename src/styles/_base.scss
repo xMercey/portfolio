@@ -1,25 +1,25 @@
 :root {
-  /* Primary */
-  --primary: #a5a7ff;
-  --primary-hover: #4f46e5;
+  --primary: #7c3aed;
+  --primary-hover: #9d4edd;
+  --secondary: #22d3ee;
 
-  /* Text */
-  --text: #f9fafb;          // heller Text für Dark Mode
-  --text-light: #cbd5e1;    // helleres Grau
-  --text-dark: #0f172a;     // für Hellmodus
+  --text: #111827;
+  --text-light: #6b7280;
+  --text-inverse: #f9fafb;
 
-  /* Borders */
-  --border: #334155;
+  --border: #d1d5db;
+  --border-dark: #374151;
 
-  /* Backgrounds */
-  --background: #000000;     // dunkel
-  --card: #1e293b;           // dunkle Kartenfarbe
+  --background: #f9fafb;
+  --background-hero: #1f2937;
+  --card: #ffffff;
+  --card-dark: #111827;
 
-  /* Subtle UI Colors */
-  --surface: #1e293b;
-  --hover: #334155;
+  --surface: #ffffff;
+  --surface-dark: #1f2937;
+  --hover: #e5e7eb;
+  --hover-dark: #374151;
 
-  /* Layout */
   --header-h: 64px;
   --footer-h: 72px;
 }
@@ -35,11 +35,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-bottom: 5rem;
 }
 
 .app-main {
   flex: 1;
-  padding-top: var(--header-h);
   padding-bottom: var(--footer-h);
 }
 
@@ -51,7 +51,7 @@ a {
 .page {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 3rem;
+  padding: 2rem 3.5rem 0 3.5rem;
 }
 
 .section {
