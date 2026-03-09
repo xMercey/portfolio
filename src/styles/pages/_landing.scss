@@ -1,57 +1,84 @@
+/* -------------------- Hero Sektion -------------------- */
 .hero {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 4rem;
+  position: relative;
+  display: flex;
   align-items: center;
-  margin: 4rem 0 10rem 0;
 
-  &-left {
-    h1 {
-      font-size: 2.7rem;
-      line-height: 1.2;
-      margin-bottom: 1rem;
-
-      span {
-        color: var(--primary);
-      }
-    }
-  }
-
-  &-subtitle {
-    font-size: 1.1rem;
-    color: var(--text-light);
-    max-width: 36rem;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-  }
-
-  &-actions {
-    display: flex;
-    gap: 1rem;
-  }
-
-  &-right {
-    display: flex;
-    justify-content: center;
-  }
-
-  &-image {
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 18px;
-
-    box-shadow:
-      0 20px 40px rgba(0,0,0,0.08),
-      0 0 0 1px rgba(0,0,0,0.04);
-  }
+  margin: 4rem 0 20rem 0;
+  background: #000000; //noch ändern 
+  color: var(--text-inverse);
 }
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 720px;
+
+  object-fit: cover;  
+  object-position: center;
+  z-index: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 2;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  color: var(--text);
+}
+
+.hero-content h1 span {
+  color: var(--primary);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
 
 .hero-actions {
   margin-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+/* -------------------- Responsive: Mobile / Tablet -------------------- */
+@media (max-width: 768px) {
+  .hero-image {      
+    object-fit: contain;   
+  }
+
+  .hero {
+    min-height: 550px;      
+    margin: 0;            
+  }
+
+  .hero-content {
+    padding: 1.5rem;
+  }
+
+  .hero-actions {
+    margin-top: 8rem;      
+    gap: 1rem;
+  }
 }
 
 .hero-card {

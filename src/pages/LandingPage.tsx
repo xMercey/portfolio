@@ -1,15 +1,13 @@
-
+import { AboutMePage } from "./AboutMePage";
 import { ProjectsPage } from "./ProjectsPage";
-
 
 export function LandingPage() {
   return (
-    <div className="page">
-
+    <>
       <section className="hero">
+        <img src="/ich3.png" alt="Lara Helmli" className="hero-image" />
 
-        <div className="hero-left">
-
+        <div className="hero-content">
           <h1>
             Hi, ich bin <span>Lara</span>
           </h1>
@@ -23,25 +21,17 @@ export function LandingPage() {
             <a href="#projects" className="btn btn-primary">
               Projekte ansehen
             </a>
-
             <a href="#about" className="btn btn-secondary">
               Über mich
             </a>
           </div>
-
         </div>
-
-        <div className="hero-right">
-          <img src="/me.jpeg" alt="Lara Helmli" className="hero-image" />
-        </div>
-
       </section>
 
-      
-      <ProjectsPage/>
-    
-     
-
-    </div>
+      <div className="page">
+        <AboutMePage/>
+        <ProjectsPage />
+      </div>
+    </>
   );
 }
