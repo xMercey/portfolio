@@ -1,6 +1,9 @@
 @use './base';
-@use './shared';
+@use './navbar';
 
 @use './pages/landing';
-@use './pages/projects';
+@use './sections/projects';
+@use './sections/aboutme';
+@use './sections/collab';
+@use './sections/contact';
 

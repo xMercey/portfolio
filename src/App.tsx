@@ -27,17 +27,14 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="app-shell">
- 
+    <main className="app-main">
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-        <main className="app-main">
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/finecash" element={<FinecashPage />} />
           </Routes>
         </main>
         <Footer />
-      </div>
     </BrowserRouter>
   )
 }
