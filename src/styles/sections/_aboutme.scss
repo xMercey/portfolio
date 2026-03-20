@@ -1,5 +1,5 @@
 
-  .container {
+  .card-container {
     margin: 3rem 0 6rem 0;
     display: flex;
     flex-wrap: wrap;
@@ -17,12 +17,12 @@
     flex-direction: column;
     justify-content: flex-start;
     transition: transform 0.2s ease;
+    border: 1px solid var(--border);
 
     &:hover {
       transform: translateY(-8px);
       box-shadow: 0 8px 20px var(--primary-border);
     }
-
   }
 
 

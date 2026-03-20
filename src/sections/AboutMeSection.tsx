@@ -19,7 +19,7 @@ export function AboutMePage() {
       <h2 id="about">Mein Fokus</h2>
       <p className="subtitle">Von der Gestaltung zur Entwicklung</p>
       <section>
-        <div className="container">
+        <div className="card-container">
           {cards.map((card) => (
             <div key={card.title} className="card">
               <h3>{card.title}</h3>
