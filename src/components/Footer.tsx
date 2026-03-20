@@ -1,14 +1,25 @@
 export function Footer() {
   return (
     <footer className="footer">
-      <span>© {new Date().getFullYear()} Lara Helmli</span>
-      <div className="footer-links">
-        <a href="mailto:deine.mail@example.com">E-Mail</a>
-        <a href="https://gitlab.bht-berlin.de/finecash" target="_blank" rel="noreferrer">
-          GitLab
-        </a>
+      
+      <div className="footer-left">
+        <h3 className="footer-name">Lara Helmli</h3>
       </div>
-    </footer>
-  )
-}
 
+      <div className="footer-contact">
+        <div className="footer-item">
+          <span>E-Mail</span>
+          <a href="mailto:lara.helmli@gmx.net">lara.helmli@gmx.net</a>
+        </div>
+
+        <div className="footer-item">
+          <span>Telefon</span>
+          <a href="tel:+4915757059860">+49 157 57059860</a>
+        </div>
+      </div>
+      <p className="footer-copy">
+          © {new Date().getFullYear()} Alle Rechte vorbehalten
+      </p>
+    </footer>
+  );
+}
