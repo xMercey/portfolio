@@ -1,7 +1,7 @@
 export function ContactSection() {
     return (
-      <section className="contact-card-section">
-        <div className="contact-card">
+      <section className="contact-card-section" id="contact">
+        <div className="card">
           <h2>Kontakt aufnehmen</h2>
           <p>
             Interesse an einer Zusammenarbeit? Ich freue mich auf Ihre Nachricht.
