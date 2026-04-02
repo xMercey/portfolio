@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 type HeaderProps = {
@@ -22,12 +23,11 @@ export function Header({darkMode, toggleDarkMode}: HeaderProps) {
         <span></span>
       </div>
 
-      {/* Navigation */}
       <nav className={`nav ${isOpen ? "active" : ""}`}>
-        <a href="/">Start</a>
-        <a href="#about">Fokus</a>
-        <a href="#projects">Projekte</a>
-        <a href="#contact">Kontakt</a>
+        <Link smooth to="/#">Start</Link>
+        <Link to="/#about">Fokus</Link>
+        <Link to="/#projects">Projekte</Link>
+<       Link to="/#contact">Kontakt</Link>
         <button 
         className={`mode-toggle ${isOpen ? "rotate" : ""}`} onClick={() => {toggleDarkMode()}}>
         {darkMode ? <svg className="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
