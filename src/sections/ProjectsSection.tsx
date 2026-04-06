@@ -3,7 +3,7 @@
 const projects = [
   {
     title: "FineCash",
-    description: "Finanz-Dashboard zur Verwaltung von Einnahmen und Ausgaben.",
+    description: "Finanz-Dashboard zur Verwaltung von Einnahmen und Ausgaben. Es hilft dabei, den Überblick über die eigenen Finanzen zu behalten.",
     highlight: "OCR & KI zur automatischen Belegerkennung",
     tags: ["Dashboard", "Datenvisualisierung", "API Integration"],
     link: "/finecash",
@@ -15,16 +15,31 @@ const projects = [
     highlight: "Praxisprojekt mit Fokus auf AR-Integration und Nutzerführung",
     tags: ["App Development", "Augmented Reality", "UX/UI"],
     link: "/figmaapp",
-    image: "src/assets/figma/figmadark.jpg",
+    image: "src/assets/figma/logodark.jpg",
+  },
+  {
+    title: "Color Palette Generator",
+    description: "Webanwendung, die aus hochgeladenen Bildern automatisch eine Farbpalette erstellt und zusätzlich Kontraste prüft.",
+    highlight: "Fokus auf Farbanalyse und Barrierefreiheit",
+    tags: ["JavaScript", "Color Extraction", "WCAG"],
+    link: "/colorpalette",
+    image: "src/assets/colorpalette/paletteImg.jpeg",
+  },
+  {
+    title: "MERN Product",
+    description: "Full-Stack Webanwendung zur Verwaltung von Produkten mit CRUD-Funktionen sowie integrierter Such- und Filterlogik.",
+    highlight: "Produktverwaltung mit Favoriten und Warenkorb-Anzeige",
+    tags: ["CRUD", "REST API", "Filterfunktion"],
+    link: "/mern-products",
+    image: "src/assets/mern_product/mern_product.jpg",
   }
 ];
 
 export function ProjectsPage() {
   return (
     <>
-      <h2 id="projects">Meine Projekte</h2>
-
-      <section>
+      <section id="projects">
+        <h2>Meine Projekte</h2> 
         <div className="gallery-grid">
           {projects.map((project, index) => (
             <div

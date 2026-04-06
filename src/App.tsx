@@ -4,6 +4,9 @@ import { LandingPage } from './pages/LandingPage'
 import { FinecashPage } from './projects/FinecashPage'
 import { Header } from './components/Header'
 import { useEffect, useState } from 'react'
+import { FigmaPage } from './projects/FigmaPage'
+import { ColorPalettePage } from './projects/ColorPalettePage'
+import { Product_mern } from './projects/Product_mern'
 
 
 function App() {
@@ -32,6 +35,9 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/finecash" element={<FinecashPage />} />
+            <Route path="/figmaapp" element={<FigmaPage />} />
+            <Route path="/colorpalette" element={<ColorPalettePage />} />
+            <Route path='/mern-products' element={<Product_mern />} />
           </Routes>
         </main>
         <Footer />

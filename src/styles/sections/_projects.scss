@@ -1,16 +1,16 @@
 .gallery-grid {
   cursor: pointer;
-  margin-top: var(--space-lg);
+  margin-top: 3rem;
   margin-bottom: var(--space-lg);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  align-items: stretch;
 }
 
 .gallery-image {
-  width: 180px;
+  width: 200px;
   height: 180px;
-  max-width: 200px;
   border-radius: 2rem;    
   object-fit: cover;      
   display: block;
@@ -19,6 +19,9 @@
 
 .gallery-info {
   padding: 1.1rem 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .highlight {
@@ -30,6 +33,7 @@
 .tags-container {
   margin: 1rem 0;
   display: flex;
+  margin-top: auto;
   flex-wrap: wrap;
   gap: 0.5rem;
 
