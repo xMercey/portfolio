@@ -1,4 +1,7 @@
-
+import finecashLogo from "../assets/finecash/logo.png";
+import figmaLogo from "../assets/figma/logodark.jpg";
+import paletteImg from "../assets/colorpalette/paletteImg.jpeg";
+import mernProductImg from "../assets/mern_product/mern_product.jpg";
 
 const projects = [
   {
@@ -7,7 +10,7 @@ const projects = [
     highlight: "OCR & KI zur automatischen Belegerkennung",
     tags: ["Dashboard", "Datenvisualisierung", "API Integration"],
     link: "/finecash",
-    image: "src/assets/finecash/logo.png",
+    image: finecashLogo,
   },
   {
     title: "Campus Navigator App",
@@ -15,7 +18,7 @@ const projects = [
     highlight: "Praxisprojekt mit Fokus auf AR-Integration und Nutzerführung",
     tags: ["App Development", "Augmented Reality", "UX/UI"],
     link: "/figmaapp",
-    image: "src/assets/figma/logodark.jpg",
+    image: figmaLogo,
   },
   {
     title: "Color Palette Generator",
@@ -23,7 +26,7 @@ const projects = [
     highlight: "Fokus auf Farbanalyse und Barrierefreiheit",
     tags: ["JavaScript", "Color Extraction", "WCAG"],
     link: "/colorpalette",
-    image: "src/assets/colorpalette/paletteImg.jpeg",
+    image: paletteImg,
   },
   {
     title: "MERN Product",
@@ -31,7 +34,7 @@ const projects = [
     highlight: "Produktverwaltung mit Favoriten und Warenkorb-Anzeige",
     tags: ["CRUD", "REST API", "Filterfunktion"],
     link: "/mern-products",
-    image: "src/assets/mern_product/mern_product.jpg",
+    image: mernProductImg,
   }
 ];
 
