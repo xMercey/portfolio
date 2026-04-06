@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import start from "../assets/figma/start.png";
+import start from "../assets/figma/Start.png";
 import sozial from "../assets/figma/Sozial.png";
 import karte from "../assets/figma/Karte.png";
 import kartear from "../assets/figma/Karte AR.png";
