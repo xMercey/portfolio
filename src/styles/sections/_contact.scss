@@ -1,53 +1,23 @@
 .contact-card-section {
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 6rem;
   }
-  
-  .contact-card {
-    max-width: 800px;
-    padding: 5rem;
-    border-radius: 2rem;
-    background-color: var(--card);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px var(--primary-border);
-    }
 
-    h2 {
-        margin-top: 3rem;
-    }
-  
-  
-    p {
-      font-size: 1.4rem;
-      line-height: 1.6;
-      color: var(--text);
-      margin-bottom: 2rem;
-    }
-  
-    .btn {
-      border-radius: 1.5rem;
-      font-weight: 600;
-      padding: 1rem 2.3rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: all 0.2s ease;
-    }
-  
-    .btn-primary {
-      background-color: var(--primary);
-      color: var(--text-light);
-  
-      &:hover {
-        background-color: var(--primary-hover);
-      }
-    }
+  .contact-card-section .card {
+    text-align: center;  
+    max-width: 700px;
   }
+
+  .contact-card-section .card a.btn {
+    display: inline-block;
+    margin: 1rem auto 0 auto;
+  }
+
+  .contact-card-section .card h2 {
+    margin: var(--space-md) 0 var(--space-md);;
+  }
+
   
   @media (max-width: 768px) {
     .contact-card {

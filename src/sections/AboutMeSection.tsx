@@ -1,27 +1,33 @@
+import { Palette, LayoutTemplate, Layers3 } from "lucide-react";
+
 export function AboutMePage() {
   const cards = [
     {
+      icon: Palette,
       title: "Design",
-      text: "Ausbildung als Gestaltungstechnischer Assistent, jetzt Medieninformatik-Studentin. Ich kombiniere Designverständnis mit technischer Umsetzung."
+      text: "Ausbildung als Gestaltungstechnischer Assistent, jetzt Medieninformatik-Studentin. Dadurch verbinde ich Design mit technischer Umsetzung."
     },
     {
+      icon: LayoutTemplate,
       title: "Frontend",
-      text: "Ich interessiere mich für die Schnittstelle zwischen Design und Entwicklung. Also Interfaces gestalten und die Technik dahinter umsetzen."
+      text: "Mich interessiert vor allem die Verbindung von Design und Entwicklung. Ich gestalte Interfaces und setze sie im Code um."
     },
     {
+      icon: Layers3,
       title: "Full Stack",
-      text: "Neben Frontend interessiert mich auch Full Stack Entwicklung, um Anwendungen ganzheitlich zu verstehen, vom UI bis zur Backend-Logik."
+      text: "Neben Frontend interessiert mich auch Full Stack Entwicklung, um besser zu verstehen, wie Anwendungen insgesamt funktionieren, vom UI bis zum Backend."
     }
   ];
 
   return (
     <>
-      <h2 id="about">Mein Fokus</h2>
+      <section id="about">
+      <h2>Mein Fokus</h2>
       <p className="subtitle">Von der Gestaltung zur Entwicklung</p>
-      <section>
-        <div className="container">
+        <div className="card-container">
           {cards.map((card) => (
             <div key={card.title} className="card">
+              <card.icon className="card-icon"/>
               <h3>{card.title}</h3>
               <p>{card.text}</p>
             </div>
