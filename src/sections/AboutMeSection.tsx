@@ -5,7 +5,7 @@ export function AboutMePage() {
     {
       icon: Palette,
       title: "Design",
-      text: "Ich habe eine Ausbildung als Gestaltungstechnische Assistentin gemacht und studiere jetzt Medieninformatik. Dadurch verbinde ich Design mit technischer Umsetzung."
+      text: "Ausbildung als Gestaltungstechnischer Assistent, jetzt Medieninformatik-Studentin. Dadurch verbinde ich Design mit technischer Umsetzung."
     },
     {
       icon: LayoutTemplate,
@@ -21,9 +21,9 @@ export function AboutMePage() {
 
   return (
     <>
-      <h2 id="about">Mein Fokus</h2>
+      <section id="about">
+      <h2>Mein Fokus</h2>
       <p className="subtitle">Von der Gestaltung zur Entwicklung</p>
-      <section>
         <div className="card-container">
           {cards.map((card) => (
             <div key={card.title} className="card">

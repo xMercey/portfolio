@@ -11,6 +11,7 @@ export function Header({darkMode, toggleDarkMode}: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <header className="header">
@@ -24,10 +25,10 @@ export function Header({darkMode, toggleDarkMode}: HeaderProps) {
       </div>
 
       <nav className={`nav ${isOpen ? "active" : ""}`}>
-        <Link smooth to="/#">Start</Link>
-        <Link to="/#about">Fokus</Link>
-        <Link to="/#projects">Projekte</Link>
-<       Link to="/#contact">Kontakt</Link>
+        <Link smooth to="/#" onClick={closeMenu}>Start</Link>
+        <Link smooth to="/#about" onClick={closeMenu}>Fokus</Link>
+        <Link smooth to="/#projects" onClick={closeMenu}>Projekte</Link>
+        <Link smooth to="/#contact" onClick={closeMenu}>Kontakt</Link>
         <button 
         className={`mode-toggle ${isOpen ? "rotate" : ""}`} onClick={() => {toggleDarkMode()}}>
         {darkMode ? <svg className="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" 

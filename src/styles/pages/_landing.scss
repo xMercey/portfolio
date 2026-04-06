@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15rem 0 10rem;
+  margin: 10rem 0;
 }
 
 .hero-main {
@@ -85,7 +85,6 @@
     max-width: 1200px;
   }
 
-
   .hero-left {
     display: flex;
     flex-direction: row;       
@@ -125,7 +124,6 @@
     height: auto;
     border-radius: 1.5rem;
   }
-
 
   .hero-actions {
     margin-top: var(--space-md);
