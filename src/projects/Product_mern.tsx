@@ -15,9 +15,9 @@ export function Product_mern() {
             <span className="project-tag">Projektübersicht</span>
             <h1>MERN Product</h1>
             <p>
-            Webanwendung zum Verwalten von Produkten. Produkte können erstellt, bearbeitet
-            und gelöscht werden. Zusätzlich gibt es Such- und Filterfunktionen sowie Favoriten
-            und einen einfachen Warenkorb als Anzeige.
+            Einfache Full-Stack-Anwendung zur Verwaltung von Produkten. 
+            Produkte können erstellt, bearbeitet und gelöscht werden. 
+            Zusätzlich gibt es eine Suche, Filterfunktionen sowie eine Favoriten- und Warenkorbansicht.
             </p>
 
             <div className="project-tech">
@@ -59,7 +59,7 @@ export function Product_mern() {
             <Target className="card-icon" />
             <h3>Projektziel</h3>
             <ul>
-              <li>Full-Stack-App zur Verwaltung von Produkten entwickelt</li>
+              <li>Full-Stack-Anwendung zur Produktverwaltung umsetzen</li>
               <li>CRUD-Funktionalität</li>
               <li>Suche und Filterung von Produkten</li>
             </ul>
@@ -71,7 +71,7 @@ export function Product_mern() {
             <ul>
               <li>Arbeiten mit Chakra UI</li>
               <li>Aufbau und Anbindung einer MongoDB-Datenbank</li>
-              <li>Umsetzung von API-Routen zur Datenverarbeitung</li>
+              <li>API-Routen zur Verarbeitung von Daten umgesetzt</li>
               <li>Deployment von Frontend und Backend</li>
             </ul>
             </div>
@@ -81,8 +81,8 @@ export function Product_mern() {
             <h3>Besonderheiten</h3>
             <ul>
               <li>Favoriten- und Warenkorb-Funktion integriert</li>
-              <li>Dynamische Filter- und Suchlogik kombiniert</li>
-              <li>Intuitive Benutzeroberfläche mit direktem Feedback (z. B. Toasts)</li>
+              <li>Kombination aus Such- und Filterfunktionen</li>
+              <li>Direkte Rückmeldungen im UI (z. B. Toasts)</li>
             </ul>
             </div>
         </div>

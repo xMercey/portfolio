@@ -62,8 +62,8 @@ export function FinecashPage() {
             <span className="project-tag">Projektübersicht</span>
             <h1>Finecash</h1>
             <p>
-              Finecash ist eine Plattform zur Verwaltung und Analyse von Finanzdaten.
-              Die Anwendung bietet eine moderne Weboberfläche zur Darstellung und Verwaltung von Finanzinformationen.
+            Viele bestehende Finanz-Tools sind entweder unübersichtlich oder nicht für gemeinsame Haushalte geeignet.
+            Mit Finecash haben wir eine Webanwendung entwickelt, die eine klare Struktur und eine einfache Verwaltung von Einnahmen, Ausgaben und Haushalten bietet.
             </p>
 
             <div className="project-tech">
@@ -134,10 +134,10 @@ export function FinecashPage() {
 
         <div className="card">
         <MountainSnow className="card-icon" />
-          <h3>Herausforderungen</h3>
+          <h3>Zentrale Herausforderungen</h3>
           <ul>
             <li>OCR-Belege korrekt auslesen und automatisch kategorisieren</li>
-            <li>Gemeinsame Haushalte synchron halten</li>
+            <li>Gemeinsame Haushalte synchron zu halten</li>
             <li>Dashboards trotz vieler Daten flüssig halten</li>
             <li>Responsives Layout für Desktop und Mobile</li>
           </ul>

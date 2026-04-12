@@ -57,9 +57,9 @@ export function FigmaPage() {
             <span className="project-tag">Projektübersicht</span>
             <h1>Campus Navigator</h1>
             <p>
-            Konzept und Design einer App für unsere Hochschule, die Studierenden
-            mithilfe einer intuitiven Navigation und einer AR-Idee dabei helfen soll,
-            sich auf dem Campus schneller zurechtzufinden.
+            Gerade für neue Studierende ist es oft schwierig, sich auf dem Campus schnell zurechtzufinden. 
+            Im Rahmen dieses Projekts haben wir eine App konzipiert, die eine einfache Orientierung ermöglicht 
+            und durch eine AR-Idee bei der Navigation unterstützt.
             </p>
 
             <div className="project-tech">
@@ -110,8 +110,8 @@ export function FigmaPage() {
             <Target className="card-icon" />
             <h3>Projektziel</h3>
             <ul>
-                <li>Eine App für bessere Orientierung auf dem Campus entwerfen</li>
-                <li>Wichtige Orte und Wege einfach auffindbar machen</li>
+                <li>Orientierung auf dem Campus verbessern</li>
+                <li>Wichtige Orte und Wege schnell auffindbar machen</li>
                 <li>Einbindung einer AR-Idee zur intuitiven Weganzeige</li>
             </ul>
             </div>
@@ -121,8 +121,8 @@ export function FigmaPage() {
             <h3>Meine Aufgaben</h3>
             <ul>
                 <li>App-Struktur im Team mitentwickelt</li>
-                <li>Erstellung von Wireframes und Screen-Designs in Figma</li>
-                <li>Ausarbeitung eines klickbaren Prototyps</li>
+                <li>Wireframes und Screen-Designs in Figma erstellt</li>
+                <li>Klickbaren Prototypen ausgearbeitet</li>
             </ul>
             </div>
 
@@ -130,9 +130,8 @@ export function FigmaPage() {
             <Sparkle className="card-icon" />
             <h3>Besonderheiten</h3>
             <ul>
-                <li>Fokus auf Orientierung für neue Studierende</li>
+                <li>Fokus auf einfache Orientierung für neue Studierende</li>
                 <li>AR-Navigation als Teil des Konzepts</li>
-                <li>Klare und einfache Bildschirmaufteilung</li>
                 <li>UI/UX-Projekt aus dem Hochschulkontext</li>
             </ul>
             </div>

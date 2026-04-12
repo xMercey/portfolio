@@ -13,9 +13,10 @@ export function ColorPalettePage() {
             <span className="project-tag">Projektübersicht</span>
             <h1>Color Palette Generator</h1>
             <p>
-            Webanwendung, mit der aus einem hochgeladenen Bild automatisch eine 
-            Farbpalette erstellt wird. Zusätzlich kann man Farbkontraste prüfen, um besser 
-            einschätzen zu können, ob Text und Hintergrund gut lesbar sind.
+            Oft ist es gar nicht so einfach, passende Farben aus einem 
+            Bild zu übernehmen oder zu prüfen, ob sie gut zusammenpassen. 
+            Die Anwendung erstellt automatisch Farbpaletten aus Bildern und 
+            hilft dabei, Farbkontraste direkt zu überprüfen.
             </p>
 
             <div className="project-tech">
@@ -57,9 +58,9 @@ export function ColorPalettePage() {
             <Target className="card-icon" />
             <h3>Projektziel</h3>
             <ul>
-              <li>Farben aus Bildern schnell auslesen</li>
-              <li>Eine Palette für Design oder Webprojekte erstellen</li>
-              <li>Kontraste direkt auf Lesbarkeit prüfen</li>
+              <li>Farben aus Bildern automatisch auslesen</li>
+              <li>Farbpaletten für Designs erstellen</li>
+              <li>Prüfen, ob Farbkontraste gut lesbar sind</li>
             </ul>
           </div>
 
@@ -70,7 +71,7 @@ export function ColorPalettePage() {
               <li>Umsetzung interaktiver Funktionen mit JavaScript</li>
               <li>Arbeiten mit dem HTML-Canvas</li>
               <li>Umgang mit Farbwerten und Kontrasten</li>
-              <li>Umsetzung interaktiver UI-Funktionen</li>
+              <li>UI-Interaktionen umgesetzt</li>
             </ul>
             </div>
 
@@ -81,7 +82,6 @@ export function ColorPalettePage() {
               <li>Erstellt aus einem Bild automatisch mehrere Farbtöne</li>
               <li>Zeigt Hex- und RGB-Werte direkt an</li>
               <li>Prüft Kontraste für Text und Hintergrund</li>
-              <li>Einfacher Aufbau ohne unnötige Schritte</li>
             </ul>
           </div>
         </div>

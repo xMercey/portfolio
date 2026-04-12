@@ -10,7 +10,7 @@ export function CollaborationSection() {
       },
       {
         title: "Zuverlässige Kommunikation",
-        text: "Ich halte Rücksprache, stelle gezielte Fragen und dokumentiere den Fortschritt."
+        text: "Ich stimme mich regelmäßig ab, stelle Fragen und halte den aktuellen Stand fest."
       },
       {
         title: "Design & Technik kombiniert",
