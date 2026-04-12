@@ -2,7 +2,7 @@ export function CollaborationSection() {
     const points = [
       {
         title: "Schnelle Auffassungsgabe",
-        text: "Ich arbeite mich schnell in neue Themen ein und finde mich auch in bestehende Projekte gut ein."
+        text: "Ich arbeite mich zügig in neue Technologien ein und finde mich schnell in bestehenden Teams zurecht."
       },
       {
         title: "Strukturiertes Arbeiten",
